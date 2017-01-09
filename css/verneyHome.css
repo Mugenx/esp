@@ -1,0 +1,242 @@
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 0;
+  border-left: 10px solid #ffcc33;
+  float: left;
+  margin-top: 50px
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 0;
+  border-right:10px solid #ff9900;
+  float: right;
+  margin-top: 50px;  
+}
+
+.mark{
+  position: absolute;
+  font-size: 100px;
+  margin-left:-25px; 
+  background-color: transparent;
+}
+.nav>li>a:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 550px) {
+  .rTop{
+          color: #ffcc35;
+          padding:1px 10px;
+          text-align:center; font-size:small;
+          align-items: center; 
+          border-radius: 3px;
+          border:2px solid #ffcc35;
+          position:fixed; right:0; bottom:760px;
+          margin:1.5vw;
+          cursor:pointer; display:none;
+        }
+  .navbar{
+    background-color: white;
+    border-radius: 0;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    box-shadow: 0 6px 1rem rgba(0, 0, 0, 0.1);
+  }
+  .navbar ul{
+    display: inline;
+    text-align: center;
+  }
+  .navbar li{
+    display: inline;
+    padding: 0 0.1vmin;
+  }
+  .navbar a {
+    font-size: 2vmin;
+    text-decoration: none;
+    color: #003366;
+  }
+  .navbar a:hover{
+    color: #ffcc35;
+  }
+  .navbar-brand{
+    display: none;
+  }
+
+  #services p{
+    font-size: 20px;
+  }
+
+  #contact p{
+    font-style: lighter;
+    font-size: 18px;
+  }
+
+  #contact td{
+    font-size: 18px;
+    padding:0 10px;
+  }
+  .sframe{
+    width: 900px;
+    height: 600px;
+    display: none;
+  }
+  .frame{
+    width: 900px;
+    height: 600px;
+  }
+  .a{
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 300px; 
+    background-color: #003366;
+    z-index: 0;
+  }
+  .aText{
+    margin-top: -150px;
+    text-align: left;
+    margin-right: 50px;
+    width: 450px;
+    float: right;
+    color: white;
+    display: none;
+  }
+
+  .b{
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 600px;
+    background-color: #ff9900;
+    z-index: 1; 
+  }
+  .bText{
+    float: left;
+    text-align: left;
+    margin: 0 150px;
+    color: white;
+    display: none;
+  }
+  .c{
+    position: relative;
+    top: 300px;
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: #ffcc33;
+    z-index: 1; 
+  }
+  .cText{
+    float: left;
+    text-align: left;
+    margin-top: -250px;
+    margin-left:100px;
+    width: 450px;
+    color: white;
+    display: none;
+  }
+  .d{
+    position: relative;
+    top: 300px;
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: #b78500;
+    z-index: 1; 
+  }
+  .dText{
+    padding-top: 30px;
+    float: left;
+    text-align: left;
+    margin: 0 150px;
+    color: white;
+    display: none;
+  }
+}
+/*small size*/
+@media (max-width: 550px) {
+  .rTop{
+    visibility: hidden;
+  }
+  .navbar{
+    background-color: #05253e;
+    border-radius: 0;
+  }
+  .navbar ul{
+    margin: 1rem auto;
+  }
+  .navbar li{
+    text-align: left;
+  }
+  .navbar a {
+    font-size: 3vmin;
+    text-decoration: none;
+    color: #ffcc35;
+  }
+  .navbar a:hover{
+    color: white;
+  }
+  .icon-bar{
+    background-color: #ffcc35;
+  }
+  .frame{
+    display: block;
+    width: 85vw;
+    display: none;
+  }
+  .sframe{
+    width: 85vw;
+    text-align: left;
+    color: white;
+    font-size: 5vw;
+  }
+  .aa{
+    width: 85vw;
+    height: 25vw;
+    background-color: #003366; 
+    padding: 30px; 
+    display: block;
+  }
+  .bb{
+    width: 85vw;
+    height: 25vw;
+    background-color: #ff9900; 
+    padding: 30px; 
+    display: block;
+  }
+  .cc{
+    width: 85vw;
+    height: 25vw;
+    background-color: #ffcc33; 
+    padding: 30px; 
+    display: block;
+  }
+  .dd{
+    width: 85vw;
+    height: 25vw;
+    background-color: #b78500; 
+    padding: 30px; 
+    display: block;
+  }
+  .aaS, .bbS, .ccS, .ddS{
+    font-size: 12px;
+    display: none;
+  }
+}
